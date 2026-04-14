@@ -63,28 +63,7 @@ Email:    test@example.com
 Password: password123
 ```
 
-## 6. API Reference
-
-MSW handlers support all assignment frontend endpoints:
-
-- `POST /auth/register`
-- `POST /auth/login`
-- `GET /users`
-- `GET /projects`
-- `POST /projects`
-- `GET /projects/:id`
-- `GET /projects/:id/tasks?status=&assignee=`
-- `POST /projects/:id/tasks`
-- `PATCH /tasks/:id`
-- `DELETE /tasks/:id`
-
-Errors follow the expected contract:
-
-- `400` validation errors
-- `401` unauthorized
-- `404` not found
-
-## 7. What I’d Do With More Time
+## 6. Future Enhancements
 
 - Continue refining shadcn-based design system consistency across all screens.
 - Add tests.
