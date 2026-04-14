@@ -1,8 +1,8 @@
-# TaskFlow Frontend Assessment
+# TaskFlow
 
 ## 1. Overview
 
-This project is a frontend-only implementation of the TaskFlow take-home assignment.
+This project is a frontend-only implementation of the TaskFlow.
 
 - **Frontend:** React + TypeScript + Vite + React Router
 - **State:** React Context + local component state
@@ -27,8 +27,6 @@ Implemented user flows:
 - Auth state lives in `AuthContext` and is persisted in `localStorage` to satisfy refresh persistence + protected routes.
 - API access is centralized in `src/lib/api.ts` so pages stay focused on UI and state transitions.
 - I used MSW request handlers to emulate the assignment REST contract directly in the browser, which removes local API runtime issues for frontend-only review.
-- For optimistic status updates, UI immediately updates task status, then reverts to previous value when PATCH fails.
-- Tradeoff: mock auth uses simple tokens and plaintext passwords because this is a frontend-only submission against a mocked API.
 
 ## 3. Running Locally
 
@@ -89,7 +87,7 @@ Errors follow the expected contract:
 ## 7. What I’d Do With More Time
 
 - Continue refining shadcn-based design system consistency across all screens.
-- Add tests (React Testing Library + Playwright happy-path E2E).
+- Add tests.
 - Add dark mode with persisted preference.
 - Add drag-and-drop between status columns.
 - Add stricter mock auth/authorization behavior and richer API error simulation.
